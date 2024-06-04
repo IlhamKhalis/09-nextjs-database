@@ -45,8 +45,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Praktikum 1
 
+#### Soal 1
 ![Screenshot](assets/01.png)
 
+#### Soal 2
 ![Screenshot](assets/02.png)
 
+#### Soal 3
 ![Screenshot](assets/03.png)
+
+#### Soal 4
+![Screenshot](assets/04.png)

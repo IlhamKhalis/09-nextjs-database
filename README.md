@@ -65,3 +65,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 #### Soal 7
 ![Screenshot](assets/07.png)
+
+#### Tugas
+![Screenshot](assets/tugas.png)

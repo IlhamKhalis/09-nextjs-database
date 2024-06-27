@@ -43,7 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 | Nama |  Ilham Khalis Putra Agatha |
 | Kelas | TI - 3A |
 
-### Praktikum 1
+### W09
 
 #### Soal 1
 ![Screenshot](assets/01.png)
@@ -68,3 +68,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 #### Tugas
 ![Screenshot](assets/tugas.png)
+
+### W10
+
+#### Soal 1
+![Screenshot](assets/1.png)

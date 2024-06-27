@@ -73,3 +73,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 #### Soal 1
 ![Screenshot](assets/1.png)
+
+#### Soal 2
+![Screenshot](assets/2.png)

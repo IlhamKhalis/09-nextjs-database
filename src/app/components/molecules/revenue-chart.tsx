@@ -12,12 +12,12 @@ import { fetchRevenue } from '@/models/query';
 export default async function RevenueChart() {
     const revenue = await fetchRevenue();
 
-    const chartHeight = 350;
-    const { yAxisLabels, topLabel } = generateYAxis(revenue);
-
     if (!revenue || revenue.length === 0) {
         return <p className="mt-4 text-gray-400">No data available.</p>;
     }
+
+    const chartHeight = 350;
+    const { yAxisLabels, topLabel } = generateYAxis(revenue);
 
     return (
         <div className="w-full md:col-span-4">
@@ -54,7 +54,7 @@ export default async function RevenueChart() {
                 </div>
                 <div className="flex items-center pb-2 pt-6">
                     <CalendarIcon className="h-5 w-5 text-gray-500" />
-                    <h3 className="ml-2 text-sm text-gray-500 ">Last 12 months</h3>
+                    <h3 className="ml-2 text-sm text-gray-500">Last 12 months</h3>
                 </div>
             </div>
         </div>

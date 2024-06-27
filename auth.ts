@@ -11,8 +11,8 @@ async function getUser(email: string): Promise<User | undefined> {
         const user = await sql<User>`SELECT * FROM users WHERE email=${email}`;
         return user.rows[0];
     } catch (error) {
-        console.error('Failed to fetch user:', error)
-        throw new Error('Failed to fetch user.')
+        console.error('Failed to fetch user:', error);
+        throw new Error('Failed to fetch user.');
     }
 }
 
@@ -26,20 +26,20 @@ export const { auth, signIn, signOut } = NextAuth({
                     .safeParse(credentials);
 
                 if (parsedCredentials.success) {
-                    const { email, password } = parsedCredentials.data
-                    const user = await getUser(email)
-                    if (!user) return null
-                    const passwordMatch = await bcrypt.compare(password, user.password)
+                    const { email, password } = parsedCredentials.data;
+                    const user = await getUser(email);
+                    if (!user) return null;
+                    const passwordMatch = await bcrypt.compare(password, user.password);
 
                     if (passwordMatch) return user;
                 }
 
-                console.log('invalid credentials');
+                console.log('Invalid credentials');
                 return null;
             },
             credentials: {
-                email: {},
-                password: {},
+                email: { label: "Email", type: "text" },
+                password: { label: "Password", type: "password" },
             }
         }),
     ],
